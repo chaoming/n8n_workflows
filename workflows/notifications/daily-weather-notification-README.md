@@ -21,8 +21,8 @@ This workflow fetches weather data from OpenWeatherMap API and sends a formatted
 
 2. **Configure OpenWeatherMap API**
    - Get your API key from [OpenWeatherMap](https://openweathermap.org/api)
-   - In the "Get Weather" node, replace `YOUR_API_KEY` with your actual API key
-   - Replace `Your City Name` with your desired city
+   - In the "Get Weather" node, replace `YOUR_OPENWEATHERMAP_API_KEY` with your actual API key
+   - Replace `London,UK` with your desired city in the format `City,Country` (e.g., `New York,US`, `Paris,FR`)
 
 3. **Configure Slack Credentials**
    - Click on the "Send Notification" node
@@ -73,6 +73,9 @@ Configure the Slack node to send to specific channels or users.
 
 ## Troubleshooting
 
-**API Error**: Verify your OpenWeatherMap API key is correct
-**City Not Found**: Check the spelling of your city name
-**Slack Not Receiving**: Verify Slack credentials and channel permissions
+**API Error**: Verify your OpenWeatherMap API key is correct and active
+**City Not Found**: Use the format `City,CountryCode` (e.g., `London,UK`, `Tokyo,JP`). Check the [ISO 3166 country codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) for the correct country code.
+**Slack Not Receiving**: 
+  - Verify Slack credentials are correctly configured
+  - Ensure the bot/app has permission to post in the target channel
+  - Check if the channel is public or if the bot has been invited to private channels

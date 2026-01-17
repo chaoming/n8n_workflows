@@ -28,11 +28,11 @@
             "parameters": [
               {
                 "name": "q",
-                "value": "=Your City Name"
+                "value": "=London,UK"
               },
               {
                 "name": "appid",
-                "value": "=YOUR_API_KEY"
+                "value": "=YOUR_OPENWEATHERMAP_API_KEY"
               },
               {
                 "name": "units",
