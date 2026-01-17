@@ -1,0 +1,28 @@
+# n8n specific
+*.log
+.n8n/
+.env
+.env.local
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Node modules (if using n8n locally)
+node_modules/
+
+# Backup files
+*.bak
+*.backup
